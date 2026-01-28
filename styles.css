@@ -76,6 +76,7 @@ button.iniciar {
 /* Cuerpo */
 main {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     margin: 2rem;
 }
@@ -150,6 +151,24 @@ main {
 
 button.comprar {
     background-color: greenyellow;
+}
+
+.tiers ul {
+    list-style: none;
+}
+
+.tiers li {
+    position: relative;
+    padding-left: 30px;
+    line-height: 1.4;
+}
+
+.tiers li.incluido::before {
+    content: "✔";
+    color: #2ecc71;
+    position: absolute;
+    left: 0;
+    font-weight: bold;
 }
 
 #basico {
